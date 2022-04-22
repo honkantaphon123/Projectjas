@@ -1,0 +1,26 @@
+GET http://localhost:5000/subscribers
+
+###
+GET http://localhost:5000/subscribers/1560
+
+###
+POST http://localhost:5000/subscribers
+Content-Type: application/json
+
+{
+    "name":"Who Hon what are you do" , 
+    "subscribedToChannel" : "de Design TO be conext"
+}
+
+###
+DELETE http://localhost:5000/subscribers/62628c2af4ae4a59bc98684f
+
+
+###
+
+PATCH  http://localhost:5000/subscribers/62628cf9f4ae4a59bc986851
+Content-Type: application/json
+
+{ 
+    "subscribedToChannel" : "Camping"
+}
